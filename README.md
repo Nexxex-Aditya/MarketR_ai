@@ -60,9 +60,7 @@ Each agent is a distinct Python class with a focused task, leveraging LLMs for i
 ├── config/
 │   └── config.yaml           # Main configuration file (updated with LLM and News API keys)
 ├── data/
-│   ├── us_spirits_purchase_data.csv # Sample spirits purchase data
-│   ├── products.csv          # Product master data
-│   └── clusters.csv          # Customer cluster data
+│   ├── purchase_data.csv # Sample data
 ├── src/
 │   ├── data_processing/
 │   │   └── data_handler.py   # Centralized data loading, preprocessing, feature engineering, anomaly detection (LLM-guided)
@@ -122,7 +120,7 @@ Each agent is a distinct Python class with a focused task, leveraging LLMs for i
 1.  **Clone the repository**
     ```bash
     git clone <repository-url>
-    cd NIQ_Hackfest # Or your project directory name
+    cd MArketR_ai # Or your project directory name
     ```
 
 2.  **Create a virtual environment**
