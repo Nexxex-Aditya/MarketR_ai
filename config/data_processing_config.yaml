@@ -1,0 +1,41 @@
+# Data processing configuration
+
+# Anomaly detection
+anomaly_contamination: 0.1
+anomaly_detection_method: "isolation_forest"
+
+# Data quality thresholds
+min_data_quality_score: 0.7
+max_missing_percentage: 0.3
+feature_importance_threshold: 0.01
+correlation_threshold: 0.9
+
+# Feature engineering
+feature_engineering:
+  date_features: true
+  interaction_features: true
+  statistical_features: true
+  domain_features: true
+
+# Dimensionality reduction
+pca:
+  n_components: 0.95
+  random_state: 42
+
+# Data integration
+integration:
+  merge_strategy: "left"
+  handle_duplicates: true
+  remove_duplicate_columns: true
+
+# Logging
+logging:
+  level: "INFO"
+  save_logs: true
+  log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Output
+output:
+  save_quality_report: true
+  save_processing_summary: true
+  timestamp_format: "%Y%m%d_%H%M%S" 
